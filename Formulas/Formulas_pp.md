@@ -226,7 +226,12 @@ $$\lim_{x\to\infty}\left(1+\frac{1}{x}\right)^x = e \qquad \lim_{x\to 0}\left(1+
 
 Ако $\lim_{x\to c}f(x) = 0$, то $\displaystyle\lim_{x\to c}\frac{\sin f(x)}{f(x)} = 1$.
 
-$$\lim_{x\to\infty}\frac{a_0x^n + a_1x^{n-1} + \cdots + a_n}{b_0x^m + b_1x^{m-1} + \cdots + b_{m-1}} = \begin{cases}\infty & n > m \\[4pt] \dfrac{a_0}{b_0} & n = m \\[4pt] 0 & n < m\end{cases}$$
+\lim_{x\to\infty} \frac{a_0x^n + a_1x^{n-1} + \dots + a_n}{b_0x^m + b_1x^{m-1} + \dots + b_m} = 
+\begin{cases}
+\infty & \text{при } n > m \\[4pt] 
+\dfrac{a_0}{b_0} & \text{при } n = m \\[4pt] 
+0 & \text{при } n < m
+\end{cases}
 
 Функцията $f(x)$ е непрекъсната в точката $x_0$ от дефиниционното ѝ множество, ако $\displaystyle\lim_{x\to x_0}f(x) = f(x_0)$.
 
