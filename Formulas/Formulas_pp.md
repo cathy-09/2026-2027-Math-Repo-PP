@@ -229,8 +229,8 @@ $$\lim_{x\to\infty}\left(1+\frac{1}{x}\right)^x = e \qquad \lim_{x\to 0}\left(1+
 $$
 \lim_{x\to\infty}\frac{a_0x^n + a_1x^{n-1} + \cdots + a_n}{b_0x^m + b_1x^{m-1} + \cdots + b_{m-1}} = 
 \begin{cases}
-\infty & n > m 
-\dfrac{a_0}{b_0} & n = m 
+\infty & n > m \\
+\dfrac{a_0}{b_0} & n = m \\
 0 & n < m
 \end{cases}
 $$
