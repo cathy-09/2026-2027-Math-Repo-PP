@@ -242,9 +242,20 @@ $$S = pr$$
 | $tg\,\alpha$ | 0 | $\sqrt3/3$ | 1 | $\sqrt3$ | – | $-\sqrt3$ | -1 | $-\sqrt3/3$ | 0 | – | 0 |
 | $\cot g\,\alpha$ | – | $\sqrt3$ | 1 | $\sqrt3/3$ | 0 | $-\sqrt3/3$ | -1 | $-\sqrt3$ | – | 0 | – |
 
+---
+
+| | $-\alpha$ | $90^\circ \pm \alpha$ | $180^\circ \pm \alpha$ | $270^\circ \pm \alpha$ | $360^\circ \pm \alpha$ |
+|---|---|---|---|---|---|
+| $\sin$ | $-\sin\alpha$ | $\cos\alpha$ | $\mp\sin\alpha$ | $-\cos\alpha$ | $\pm\sin\alpha$ |
+| $\cos$ | $\cos\alpha$ | $\mp\sin\alpha$ | $-\cos\alpha$ | $\pm\sin\alpha$ | $\cos\alpha$ |
+| $tg$ | $-tg\,\alpha$ | $\mp\cot g\,\alpha$ | $\pm tg\,\alpha$ | $\mp\cot g\,\alpha$ | $\pm tg\,\alpha$ |
+| $\cot g$ | $-\cot g\,\alpha$ | $\mp tg\,\alpha$ | $\pm\cot g\,\alpha$ | $\mp tg\,\alpha$ | $\pm\cot g\,\alpha$ |
+
+---
+
 ## Тригонометрични тъждества
 
-**Редукционни формули** ($90^\circ \pm \alpha$, $180^\circ \pm \alpha$, $270^\circ \pm \alpha$, $360^\circ \pm \alpha$): синус ↔ косинус, тангенс ↔ котангенс според квадранта (вж. оригиналната таблица в спецификацията).
+**Редукционни формули** ($90^\circ \pm \alpha$, $180^\circ \pm \alpha$, $270^\circ \pm \alpha$, $360^\circ \pm \alpha$): синус ↔ косинус, тангенс ↔ котангенс според квадранта.
 
 **Основни тъждества:**
 
@@ -280,7 +291,7 @@ $$\cos\alpha + \cos\beta = 2\cos\frac{\alpha+\beta}{2}\cos\frac{\alpha-\beta}{2}
 
 $$\cos\alpha - \cos\beta = -2\sin\frac{\alpha+\beta}{2}\sin\frac{\alpha-\beta}{2}$$
 
-**Полуъгъл:**
+**Формули за половин ъгъл:**
 
 $$1 - \cos 2\alpha = 2\sin^2\alpha \qquad 1 + \cos 2\alpha = 2\cos^2\alpha$$
 
