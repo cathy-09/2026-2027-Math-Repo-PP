@@ -167,11 +167,11 @@ $$S_1 = S\cos\varphi$$
 ---
 
 | | $-\alpha$ | $90^\circ \pm \alpha$ | $180^\circ \pm \alpha$ | $270^\circ \pm \alpha$ | $360^\circ \pm \alpha$ |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| **$\sin$** | $-\sin \alpha$ | $\cos \alpha$ | $\mp \sin \alpha$ | $-\cos \alpha$ | $\pm \sin \alpha$ |
-| **$\cos$** | $\cos \alpha$ | $\mp \sin \alpha$ | $-\cos \alpha$ | $\pm \sin \alpha$ | $\cos \alpha$ |
-| **$\tan$** | $-\tan \alpha$ | $\mp \cot \alpha$ | $\pm \tan \alpha$ | $\mp \cot \alpha$ | $\pm \tan \alpha$ |
-| **$\cot$** | $-\cot \alpha$ | $\mp \tan \alpha$ | $\
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **sin** | $-\sin\alpha$ | $\cos\alpha$ | $\mp\sin\alpha$ | $-\cos\alpha$ | $\pm\sin\alpha$ |
+| **cos** | $\cos\alpha$ | $\mp\sin\alpha$ | $-\cos\alpha$ | $\pm\sin\alpha$ | $\cos\alpha$ |
+| **tg** | $-\operatorname{tg}\alpha$ | $\mp\operatorname{cotg}\alpha$ | $\pm\operatorname{tg}\alpha$ | $\mp\operatorname{cotg}\alpha$ | $\pm\operatorname{tg}\alpha$ |
+| **cotg** | $-\operatorname{cotg}\alpha$ | $\mp\operatorname{tg}\alpha$ | $\pm\operatorname{cotg}\alpha$ | $\mp\operatorname{tg}\alpha$ | $\pm\operatorname{cotg}\alpha$ |
 
 ---
 
