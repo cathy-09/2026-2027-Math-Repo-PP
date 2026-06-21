@@ -164,6 +164,17 @@ $$S_1 = S\cos\varphi$$
 | $tg\,\alpha$ | 0 | $\sqrt3/3$ | 1 | $\sqrt3$ | – | $-\sqrt3$ | -1 | $-\sqrt3/3$ | 0 | – | 0 |
 | $\cot g\,\alpha$ | – | $\sqrt3$ | 1 | $\sqrt3/3$ | 0 | $-\sqrt3/3$ | -1 | $-\sqrt3$ | – | 0 | – |
 
+---
+
+| | $-\alpha$ | $90^\circ \pm \alpha$ | $180^\circ \pm \alpha$ | $270^\circ \pm \alpha$ | $360^\circ \pm \alpha$ |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| **$\sin$** | $-\sin \alpha$ | $\cos \alpha$ | $\mp \sin \alpha$ | $-\cos \alpha$ | $\pm \sin \alpha$ |
+| **$\cos$** | $\cos \alpha$ | $\mp \sin \alpha$ | $-\cos \alpha$ | $\pm \sin \alpha$ | $\cos \alpha$ |
+| **$\tan$** | $-\tan \alpha$ | $\mp \cot \alpha$ | $\pm \tan \alpha$ | $\mp \cot \alpha$ | $\pm \tan \alpha$ |
+| **$\cot$** | $-\cot \alpha$ | $\mp \tan \alpha$ | $\
+
+---
+
 **Тригонометрични тъждества:**
 
 $$\sin(\alpha \pm \beta) = \sin\alpha\cos\beta \pm \cos\alpha\sin\beta$$
