@@ -35,11 +35,14 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{4pt}
 
-\renewcommand{\tg}{\operatorname{tg}}
-\newcommand{\cotg}{\operatorname{cotg}}
+\AtBeginDocument{%
+  \let\tg\relax
+  \let\cotg\relax
+  \newcommand{\tg}{\operatorname{tg}}%
+  \newcommand{\cotg}{\operatorname{cotg}}%
+}
 
 \begin{document}
-
 \begin{titlepage}
 \centering
 \vspace*{1.5cm}
@@ -69,10 +72,9 @@
 {\Large\bfseries СПРАВОЧНИ МАТЕРИАЛИ\par}
 
 \vfill
-
 \vspace{2cm}
 
-{\normalsize 21.06.2026 г.\par}
+{\normalsize 21.02.2023 г.\par}
 
 \vspace{1cm}
 \end{titlepage}
@@ -292,11 +294,5 @@ $$1 - \cos 2\alpha = 2\sin^2\alpha \qquad 1 + \cos 2\alpha = 2\cos^2\alpha$$
 $$\sin\alpha\sin\beta = \tfrac{1}{2}\big(\cos(\alpha-\beta) - \cos(\alpha+\beta)\big)$$
 $$\cos\alpha\cos\beta = \tfrac{1}{2}\big(\cos(\alpha-\beta) + \cos(\alpha+\beta)\big)$$
 $$\sin\alpha\cos\beta = \tfrac{1}{2}\big(\sin(\alpha+\beta) + \sin(\alpha-\beta)\big)$$
-
-\vspace{1cm}
-\begin{center}
-\textit{Източник: МИНИСТЕРСТВО НА ОБРАЗОВАНИЕТО И НАУКАТА ---
-Справочни материали за ДЗИ по математика, Общообразователна подготовка (21.02.2023 г.)}
-\end{center}
 
 \end{document}
