@@ -8,10 +8,8 @@
 \usepackage{mathtools}
 \usepackage[margin=2.2cm]{geometry}
 \usepackage{titlesec}
-\usepackage{enumitem}
 \usepackage{array}
 \usepackage{booktabs}
-\usepackage{longtable}
 \usepackage[table]{xcolor}
 \usepackage{tikz}
 \usepackage{fancyhdr}
@@ -20,7 +18,6 @@
 
 \definecolor{titleblue}{RGB}{20,40,90}
 \definecolor{sectionblue}{RGB}{30,60,120}
-\definecolor{rulegray}{RGB}{150,150,150}
 
 \titleformat{\section}
   {\large\bfseries\color{sectionblue}}{\thesection}{1em}{}
@@ -49,7 +46,7 @@
 
 {\large МИНИСТЕРСТВО НА ОБРАЗОВАНИЕТО И НАУКАТА\par}
 
-\vspace{3.2cm}
+\vspace{2.2cm}
 
 \begin{tikzpicture}
 \draw[titleblue, line width=1pt] (0,0) -- (15.5,0);
@@ -61,7 +58,7 @@
 {\Huge\bfseries\color{titleblue} ПО МАТЕМАТИКА\par}
 
 \vspace{1cm}
-{\LARGE\itshape ОБЩООБРАЗОВАТЕЛНА ПОДГОТОВКА\par}
+{\LARGE ОБЩООБРАЗОВАТЕЛНА ПОДГОТОВКА\par}
 
 \vspace{0.8cm}
 \begin{tikzpicture}
@@ -78,5 +75,228 @@
 {\normalsize 21.06.2026 г.\par}
 
 \vspace{1cm}
-
 \end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Квадратно уравнение}
+
+$$ax^2 + bx + c = 0,\quad a \neq 0$$
+
+$$D = b^2 - 4ac \qquad x_{1,2} = \frac{-b \pm \sqrt{D}}{2a},\quad D \geq 0$$
+
+$$ax^2 + bx + c = a(x - x_1)(x - x_2)$$
+
+\textbf{Формули на Виет:}
+$$x_1 + x_2 = -\frac{b}{a} \qquad x_1 \cdot x_2 = \frac{c}{a}$$
+
+\section{Квадратна функция}
+
+Графиката на $y = ax^2 + bx + c$ е парабола с връх точката:
+$$\left(-\frac{b}{2a},\ -\frac{D}{4a}\right)$$
+
+\section{Корен, степен и логаритъм}
+
+$$\sqrt[2k]{a^2} = |a| \qquad \sqrt[2k+1]{a^{2k+1}} = a,\quad k \in \mathbb{N}$$
+
+$$a^{-m} = \frac{1}{a^m},\quad a \neq 0 \qquad a^{\frac{m}{n}} = \sqrt[n]{a^m}$$
+
+$$\sqrt[n]{\sqrt[k]{a}} = \sqrt[nk]{a} \qquad \sqrt[nk]{a^{mk}} = \sqrt[n]{a^m},\quad a > 0,\ k \geq 2,\ n \geq 2,\ m, n, k \in \mathbb{N}$$
+
+Ако $a > 1$, то $a^x > a^y \Leftrightarrow x > y$;\quad ако $0 < a < 1$, то $a^x < a^y \Leftrightarrow x > y$.
+
+$$\log_a x = b \Leftrightarrow a^b = x \qquad \log_a a^b = b \qquad a^{\log_a x} = x,\quad a, b > 0,\ a \neq 1$$
+
+$$\log_a(xy) = \log_a x + \log_a y \qquad \log_a\frac{x}{y} = \log_a x - \log_a y$$
+
+$$\log_a x^n = n\log_a x \qquad \log_{a^m} x = \frac{1}{m}\log_a x,\quad m \neq 0$$
+
+$$\log_a x = \frac{\log_b x}{\log_b a},\quad a > 0,\ a \neq 1,\ x, y > 0,\ b > 0,\ b \neq 1$$
+
+\section{Съединения на $n$ елемента от $k$-ти клас без повторения}
+
+$$P_n = n! = n(n-1)\cdots 3\cdot 2\cdot 1$$
+
+$$V_n^k = n(n-1)\cdots(n-k+1)$$
+
+$$C_n^k = \frac{V_n^k}{P_k} = \frac{n(n-1)\cdots(n-k+1)}{k(k-1)\cdots 3\cdot 2\cdot 1}$$
+
+\section{Прогресии}
+
+\textbf{Аритметична прогресия:}
+$$a_n = a_1 + (n-1)d \qquad S_n = \frac{a_1 + a_n}{2}\cdot n = \frac{2a_1 + (n-1)d}{2}\cdot n$$
+
+\textbf{Геометрична прогресия:}
+$$a_n = a_1 \cdot q^{n-1} \qquad S_n = a_1\frac{q^n - 1}{q - 1},\quad q \neq 1$$
+
+\textbf{Формула за сложна лихва:}
+$$K_n = K\left(1 + \frac{p}{100}\right)^n$$
+
+\section{Вероятности}
+
+\textbf{Вероятност за настъпване на събитието $A$:}
+$$P(A) = \frac{\text{брой на благоприятните изходи}}{\text{общ брой на изходите}},\quad 0 \leq P(A) \leq 1$$
+
+\textbf{Вероятност на сбор от събития:}
+$$P(A \cup B) = P(A) + P(B),\quad A\text{ и }B\text{ са несъвместими}$$
+$$P(A \cup B) = P(A) + P(B) - P(AB),\quad A\text{ и }B\text{ са съвместими}$$
+
+\textbf{Вероятност на противоположно събитие:}
+$$P(\overline{A}) = 1 - P(A)$$
+
+\textbf{Условна вероятност:}
+$$P(A \mid B) = \frac{P(AB)}{P(B)},\quad P(B) \neq 0$$
+
+\textbf{Теорема за умножение на вероятности:}
+$$P(AB) = P(A)\cdot P(B \mid A) = P(B)\cdot P(A \mid B),\quad P(A) \neq 0,\ P(B) \neq 0$$
+
+\textbf{Формула на Бернули:}
+$$P_n(k) = C_n^k \cdot p^k \cdot q^{n-k},\quad k = 0, 1, 2, \ldots, n$$
+
+\textbf{Теорема за умножение на вероятности на независими събития:}
+$$P(AB) = P(A)\cdot P(B)$$
+
+Събитията $A$ и $B$ са независими, ако $P(A \mid B) = P(A)$.
+
+\section{Статистика}
+
+\textbf{Средна аритметична стойност:}
+$$\bar{x}_{\text{ар.}} = \frac{a_1 + a_2 + \cdots + a_n}{n},\quad n \in \mathbb{N}$$
+
+\textbf{Претеглена средна стойност:}
+$$\bar{x} = \frac{1}{n}\sum_{i=1}^{k} x_i n_i$$
+където $n_i$ е относителна честота; $n$ --- обем на извадката.
+
+\textbf{Дисперсия:} \quad $DX = E\big[(X - EX)^2\big]$
+
+\subsection{Средни стойности на елементи на дадено множество}
+
+\textbf{Средна геометрична стойност:}
+$$\bar{x}_{\text{геом.}} = \sqrt[n]{a_1 \cdot a_2 \cdots a_n},\quad n \in \mathbb{N},\ a_i > 0$$
+
+\textbf{Средна хармонична стойност:}
+$$\bar{x}_{\text{харм.}} = \frac{n}{\dfrac{1}{a_1} + \dfrac{1}{a_2} + \cdots + \dfrac{1}{a_n}},\quad n \in \mathbb{N},\ a_i > 0$$
+
+\textbf{Средна квадратична стойност:}
+$$\bar{x}_{\text{квадр.}} = \sqrt{\frac{a_1^2 + a_2^2 + \cdots + a_n^2}{n}},\quad n \in \mathbb{N}$$
+
+\textbf{Връзка между средните стойности} ($n \in \mathbb{N},\ a_i > 0$):
+$$\bar{x}_{\text{харм.}} \leq \bar{x}_{\text{геом.}} \leq \bar{x}_{\text{ар.}} \leq \bar{x}_{\text{квадр.}}$$
+
+\newpage
+\section{Зависимости в триъгълник и успоредник при стандартни означения}
+
+\textbf{Правоъгълен триъгълник:}
+$$c^2 = a^2 + b^2 \qquad S = \frac{1}{2}ab = \frac{1}{2}c\,h_c$$
+$$a^2 = a_1 c \qquad b^2 = b_1 c \qquad h_c^2 = a_1 b_1 \qquad r = \frac{a + b - c}{2}$$
+$$\sin\alpha = \frac{a}{c} \qquad \cos\alpha = \frac{b}{c} \qquad \tg\,\alpha = \frac{a}{b} \qquad \cotg\,\alpha = \frac{b}{a}$$
+
+\textbf{Произволен триъгълник:}
+$$\frac{a}{\sin\alpha} = \frac{b}{\sin\beta} = \frac{c}{\sin\gamma} = 2R$$
+$$a^2 = b^2 + c^2 - 2bc\cos\alpha \qquad b^2 = a^2 + c^2 - 2ac\cos\beta \qquad c^2 = a^2 + b^2 - 2ab\cos\gamma$$
+
+\textbf{Формула за медиана:}
+$$m_a^2 = \tfrac{1}{4}(2b^2 + 2c^2 - a^2) \qquad m_b^2 = \tfrac{1}{4}(2a^2 + 2c^2 - b^2) \qquad m_c^2 = \tfrac{1}{4}(2a^2 + 2b^2 - c^2)$$
+
+\textbf{Формула за ъглополовяща:}
+$$\frac{a}{b} = \frac{n}{m} \qquad l_c^2 = ab - mn$$
+
+\textbf{Формула за диагоналите на успоредник:}
+$$d_1^2 + d_2^2 = 2a^2 + 2b^2$$
+
+\section{Формули за лице}
+
+\textbf{Триъгълник:}
+$$S = \frac{1}{2}c\,h_c \qquad S = \frac{1}{2}ab\sin\gamma \qquad S = \sqrt{p(p-a)(p-b)(p-c)} \qquad S = pr \qquad S = \frac{abc}{4R}$$
+
+\textbf{Успоредник:}\quad $S = a\,h_a \qquad S = ab\sin\alpha$
+
+\textbf{Трапец:}\quad $S = \dfrac{a+b}{2}h$
+
+\textbf{Четириъгълник:}\quad $S = \dfrac{1}{2}d_1 d_2\sin\varphi$,\quad $\varphi$ --- ъгъл между диагоналите
+
+\textbf{Описан многоъгълник:}\quad $S = pr$
+
+\section{Ръбести и валчести тела}
+
+\textbf{Призма:}\quad $S_{\text{л}} = Ph \qquad S = 2S_B + S_{\text{л}} \qquad V = Bh$
+
+\textbf{Пирамида:}\quad $S_{\text{л}} = \dfrac{Pa}{2} \qquad S = S_B + S_{\text{л}} \qquad V = \dfrac{Bh}{3}$
+
+\textbf{Прав кръгов цилиндър:}\quad $S_{\text{л}} = 2\pi r h \qquad S = 2\pi rh + 2\pi r^2 \qquad V = \pi r^2 h$
+
+\textbf{Прав кръгов конус:}\quad $S_{\text{л}} = \pi r l \qquad S = \pi rl + \pi r^2 \qquad V = \dfrac{\pi r^2 h}{3}$
+
+\textbf{Сфера и кълбо:}\quad $S = 4\pi r^2 \qquad V = \dfrac{4}{3}\pi r^3$
+
+\newpage
+\section{Тригонометрични функции}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{l*{11}{c}}
+\toprule
+$\alpha^\circ$ & 0° & 30° & 45° & 60° & 90° & 120° & 135° & 150° & 180° & 270° & 360° \\
+\midrule
+$\alpha$ rad & 0 & $\frac{\pi}{6}$ & $\frac{\pi}{4}$ & $\frac{\pi}{3}$ & $\frac{\pi}{2}$ & $\frac{2\pi}{3}$ & $\frac{3\pi}{4}$ & $\frac{5\pi}{6}$ & $\pi$ & $\frac{3\pi}{2}$ & $2\pi$ \\
+$\sin\alpha$ & 0 & $\frac{1}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{3}}{2}$ & 1 & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{1}{2}$ & 0 & $-1$ & 0 \\
+$\cos\alpha$ & 1 & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{1}{2}$ & 0 & $-\frac{1}{2}$ & $-\frac{\sqrt{2}}{2}$ & $-\frac{\sqrt{3}}{2}$ & $-1$ & 0 & 1 \\
+$\tg\,\alpha$ & 0 & $\frac{\sqrt{3}}{3}$ & 1 & $\sqrt{3}$ & -- & $-\sqrt{3}$ & $-1$ & $-\frac{\sqrt{3}}{3}$ & 0 & -- & 0 \\
+$\cotg\,\alpha$ & -- & $\sqrt{3}$ & 1 & $\frac{\sqrt{3}}{3}$ & 0 & $-\frac{\sqrt{3}}{3}$ & $-1$ & $-\sqrt{3}$ & -- & 0 & -- \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Редукционни формули}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{l*{5}{c}}
+\toprule
+ & $-\alpha$ & $90^\circ\pm\alpha$ & $180^\circ\pm\alpha$ & $270^\circ\pm\alpha$ & $360^\circ\pm\alpha$ \\
+\midrule
+$\sin$ & $-\sin\alpha$ & $\cos\alpha$ & $\mp\sin\alpha$ & $-\cos\alpha$ & $\pm\sin\alpha$ \\
+$\cos$ & $\cos\alpha$ & $\mp\sin\alpha$ & $-\cos\alpha$ & $\pm\sin\alpha$ & $\cos\alpha$ \\
+$\tg$ & $-\tg\,\alpha$ & $\mp\cotg\,\alpha$ & $\pm\tg\,\alpha$ & $\mp\cotg\,\alpha$ & $\pm\tg\,\alpha$ \\
+$\cotg$ & $-\cotg\,\alpha$ & $\mp\tg\,\alpha$ & $\pm\cotg\,\alpha$ & $\mp\tg\,\alpha$ & $\pm\cotg\,\alpha$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Тригонометрични тъждества}
+
+$$\sin^2\alpha + \cos^2\alpha = 1 \qquad \tg\,\alpha\cdot\cotg\,\alpha = 1$$
+
+$$\sin(\alpha \pm \beta) = \sin\alpha\cos\beta \pm \cos\alpha\sin\beta$$
+$$\cos(\alpha \pm \beta) = \cos\alpha\cos\beta \mp \sin\alpha\sin\beta$$
+
+$$\tg(\alpha \pm \beta) = \frac{\tg\,\alpha \pm \tg\,\beta}{1 \mp \tg\,\alpha\,\tg\,\beta} \qquad
+\cotg(\alpha \pm \beta) = \frac{\cotg\,\alpha\,\cotg\,\beta \mp 1}{\cotg\,\beta \pm \cotg\,\alpha}$$
+
+$$\sin 2\alpha = 2\sin\alpha\cos\alpha$$
+$$\cos 2\alpha = \cos^2\alpha - \sin^2\alpha = 2\cos^2\alpha - 1 = 1 - 2\sin^2\alpha$$
+
+$$\sin 2\alpha = \frac{2\tg\,\alpha}{1 + \tg^2\alpha} \qquad \cos 2\alpha = \frac{1 - \tg^2\alpha}{1 + \tg^2\alpha}$$
+
+$$\tg\,2\alpha = \frac{2\tg\,\alpha}{1 - \tg^2\alpha} \qquad \cotg\,2\alpha = \frac{\cotg^2\alpha - 1}{2\cotg\,\alpha}$$
+
+$$\sin\alpha + \sin\beta = 2\sin\frac{\alpha+\beta}{2}\cos\frac{\alpha-\beta}{2} \qquad
+\sin\alpha - \sin\beta = 2\cos\frac{\alpha+\beta}{2}\sin\frac{\alpha-\beta}{2}$$
+
+$$\cos\alpha + \cos\beta = 2\cos\frac{\alpha+\beta}{2}\cos\frac{\alpha-\beta}{2} \qquad
+\cos\alpha - \cos\beta = -2\sin\frac{\alpha+\beta}{2}\sin\frac{\alpha-\beta}{2}$$
+
+$$1 - \cos 2\alpha = 2\sin^2\alpha \qquad 1 + \cos 2\alpha = 2\cos^2\alpha$$
+
+$$\sin\alpha\sin\beta = \tfrac{1}{2}\big(\cos(\alpha-\beta) - \cos(\alpha+\beta)\big)$$
+$$\cos\alpha\cos\beta = \tfrac{1}{2}\big(\cos(\alpha-\beta) + \cos(\alpha+\beta)\big)$$
+$$\sin\alpha\cos\beta = \tfrac{1}{2}\big(\sin(\alpha+\beta) + \sin(\alpha-\beta)\big)$$
+
+\vspace{1cm}
+\begin{center}
+\textit{Източник: МИНИСТЕРСТВО НА ОБРАЗОВАНИЕТО И НАУКАТА ---
+Справочни материали за ДЗИ по математика, Общообразователна подготовка (21.02.2023 г.)}
+\end{center}
+
+\end{document}
