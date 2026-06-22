@@ -1,0 +1,82 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[bulgarian]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+
+\definecolor{titleblue}{RGB}{20,40,90}
+\definecolor{sectionblue}{RGB}{30,60,120}
+\definecolor{rulegray}{RGB}{150,150,150}
+
+\titleformat{\section}
+  {\large\bfseries\color{sectionblue}}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalsize\bfseries\color{sectionblue}}{\thesubsection}{1em}{}
+
+\pagestyle{fancy}
+\setlength{\headheight}{14pt}
+\fancyhf{}
+\fancyhead[L]{\small ДЗИ по математика -- Общообразователна подготовка}
+\fancyhead[R]{\small Справочни материали}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+\renewcommand{\tg}{\operatorname{tg}}
+\newcommand{\cotg}{\operatorname{cotg}}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+\vspace*{1.5cm}
+
+{\large МИНИСТЕРСТВО НА ОБРАЗОВАНИЕТО И НАУКАТА\par}
+
+\vspace{3.2cm}
+
+\begin{tikzpicture}
+\draw[titleblue, line width=1pt] (0,0) -- (15.5,0);
+\end{tikzpicture}
+
+\vspace{0.8cm}
+{\Huge\bfseries\color{titleblue} ДЪРЖАВЕН ЗРЕЛОСТЕН ИЗПИТ\par}
+\vspace{0.4cm}
+{\Huge\bfseries\color{titleblue} ПО МАТЕМАТИКА\par}
+
+\vspace{1cm}
+{\LARGE\itshape ОБЩООБРАЗОВАТЕЛНА ПОДГОТОВКА\par}
+
+\vspace{0.8cm}
+\begin{tikzpicture}
+\draw[titleblue, line width=1pt] (0,0) -- (15.5,0);
+\end{tikzpicture}
+
+\vspace{1.6cm}
+{\Large\bfseries СПРАВОЧНИ МАТЕРИАЛИ\par}
+
+\vfill
+
+\vspace{2cm}
+
+{\normalsize 21.06.2026 г.\par}
+
+\vspace{1cm}
+
+\end{titlepage}
