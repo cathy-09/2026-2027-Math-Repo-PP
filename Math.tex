@@ -1,0 +1,234 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[bulgarian]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,positioning}
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+\definecolor{tocgreen}{RGB}{0,110,40}
+\definecolor{defblue}{RGB}{20,70,140}
+\definecolor{thmorange}{RGB}{190,90,10}
+\definecolor{exgray}{RGB}{90,90,90}
+\definecolor{probgreen}{RGB}{0,110,40}
+\definecolor{defgreen}{RGB}{20, 110, 75}
+
+\definecolor{greenaccent}{HTML}{2E7D32}
+\definecolor{blueaccent}{HTML}{000080}
+
+\usepackage[colorlinks=true,linkcolor=tocgreen,urlcolor=tocgreen,citecolor=tocgreen]{hyperref}
+\geometry{margin=2cm}
+
+\newcommand{\vv}[1]{\overrightarrow{#1}}
+
+\newtcolorbox{defbox}[1][Определение]{
+  colback=defgreen!5, colframe=defgreen, coltitle=white,
+  fonttitle=\bfseries, title=#1, boxrule=0.8pt, arc=2pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt, breakable
+}
+\newtcolorbox{thmbox}[1][Теорема]{
+  colback=thmorange!6, colframe=thmorange, coltitle=white,
+  fonttitle=\bfseries, title=#1, boxrule=0.8pt, arc=2pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt, breakable
+}
+\newtcolorbox{exbox}[1][Пример]{
+  colback=exgray!5, colframe=exgray, coltitle=white,
+  fonttitle=\bfseries\itshape, title=#1, boxrule=0.6pt, arc=2pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt, breakable
+}
+\newtcolorbox{probbox}[1][Задача]{
+  colback=probgreen!4, colframe=probgreen, coltitle=white,
+  fonttitle=\bfseries, title=#1, boxrule=0.7pt, arc=2pt,
+  left=6pt, right=6pt, top=4pt, bottom=4pt, breakable
+}
+
+\newcommand{\seclabel}{lesson11}
+
+\newcommand{\qtag}[1]{\texttt{\color{greenaccent}\small#1}}
+\newcommand{\qtagb}[1]{\texttt{\color{blueaccent}\small#1}}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+{\large МИНИСТЕРСТВО НА ОБРАЗОВАНИЕТО И НАУКАТА\par}
+\vspace{-0.2cm}
+\noindent\rule{0.8\textwidth}{0.5pt}
+\vspace{0.3cm}
+{\large ПОДГОТОВКА ЗА ДЪРЖАВЕН ЗРЕЛОСТЕН ИЗПИТ\par}
+\vspace{-0.4cm}
+\noindent\rule{0.8\textwidth}{0.5pt}
+\vspace{0.8cm}
+\vspace{1.5cm}
+{\Huge\bfseries МАТЕМАТИКА\par}
+\vspace{0.6cm}
+{\Large Подготовка за ДЗИ -- 12. клас\par}
+\vspace{0.6cm}
+{\Large Сборник с тестове и примерни изпити\par}
+\vspace{2.4cm}
+\noindent\rule{1.0\textwidth}{0.5pt}
+\vspace{0.4cm}
+{\Large\bfseries Учебна година\par}
+{\Large\bfseries 2026/2027 \par}
+\vspace{-0.2cm}
+\noindent\rule{1.0\textwidth}{0.5pt}
+{\Large\bfseries Автор:\par}
+{\large Катерина Димитрова\par}
+\noindent\rule{1.0\textwidth}{0.5pt}
+\vfill
+{\large $\bullet$ София $\bullet$ \par}
+{\large 2026 \par}
+\end{titlepage}
+
+\newpage
+\begin{center}
+{\LARGE\bfseries\color{tocgreen} Съдържание}
+\end{center}
+\vspace{0.5cm}
+
+{\color{tocgreen}
+\noindent{\large\bfseries Модул I -- Геометрия}\par
+\vspace{0.2cm}
+\noindent{\bfseries I. Вектори и координати}\par
+\begin{enumerate}[label=1.\arabic*.,leftmargin=1.5cm]
+\item \hyperref[\seclabel]{Линейна зависимост и независимост на вектори в равнината и пространството} \dotfill \hyperref[\seclabel]{5}
+\item Векторна база в равнината и пространството \dotfill 9
+\item Скаларно произведение на два вектора. Приложение \dotfill 11
+\item Координати на вектор в равнинна правоъгълна координатна система \dotfill 14
+\item Операции с вектори, зададени с координати \dotfill 16
+\end{enumerate}
+\noindent Вектори и координати -- Тест 1 и Тест 2 \dotfill 19
+
+\vspace{0.3cm}
+\noindent{\bfseries II. Аналитична геометрия в равнината}\par
+\begin{enumerate}[label=2.\arabic*.,leftmargin=1.5cm]
+\item Уравнение на права \dotfill 21
+\item Взаимно положение на две прави \dotfill 26
+\item Приложение на векторите в аналитичната геометрия за решаване на триъгълник \dotfill 30
+\item Нормално уравнение на окръжност \dotfill 33
+\item Канонично уравнение на елипса, хипербола и парабола \dotfill 35
+\end{enumerate}
+\noindent Аналитична геометрия в равнината -- Тест 1 и Тест 2 \dotfill 38
+
+\vspace{0.3cm}
+\noindent{\bfseries III. Стереометрия}\par
+\begin{enumerate}[label=3.\arabic*.,leftmargin=1.5cm]
+\item Първични понятия и аксиоми в стереометрията. Успоредност в пространството \dotfill 40
+\item Перпендикулярност в пространството \dotfill 44
+\item Перпендикуляр и наклонена \dotfill 48
+\item Двустенен ъгъл. Перпендикулярност на две равнини \dotfill 50
+\item Многостен \dotfill 52
+\item Сечение на многостен с равнина \dotfill 55
+\item Построяване на сечение с равнина \dotfill 59
+\item Ос на кръстосани прави \dotfill 63
+\item Ротационни тела \dotfill 68
+\end{enumerate}
+\noindent Стереометрия -- Тест 1 и Тест 2 \dotfill 74\par
+\noindent Годишен преговор \dotfill 83\par
+\noindent Проекти \dotfill 86
+
+\vspace{0.5cm}
+\noindent{\large\bfseries Модул II -- Елементи на математическия анализ}\par
+\vspace{0.2cm}
+\noindent{\bfseries I. Полиноми на една променлива}\par
+\begin{enumerate}[label=1.\arabic*.,leftmargin=1.5cm]
+\item Определение. Операции с полиноми \dotfill 90
+\item Теорема на Безу. Схема на Хорнер \dotfill 93
+\item Нули на полиноми \dotfill 97
+\item Рационални корени на уравнение с цели коефициенти \dotfill 99
+\item Решаване на уравнения и неравенства от по-висока степен \dotfill 102
+\end{enumerate}
+\noindent Полиноми на една променлива -- Тест 1 и Тест 2 \dotfill 106
+
+\vspace{0.3cm}
+\noindent{\bfseries II. Числови редици}\par
+\begin{enumerate}[label=2.\arabic*.,leftmargin=1.5cm]
+\item Метод на математическата индукция \dotfill 107
+\item Нютонов бином \dotfill 109
+\item Числови редици \dotfill 112
+\item Теореми за граници на редици \dotfill 115
+\item Сума на безкрайно намаляваща геометрична прогресия \dotfill 123
+\end{enumerate}
+\noindent Числови редици -- Тест 1 и Тест 2 \dotfill 125
+
+\vspace{0.3cm}
+\noindent{\bfseries III. Функции. Непрекъснатост и диференцируемост}\par
+\begin{enumerate}[label=3.\arabic*.,leftmargin=1.5cm]
+\item Функция. Начини на задаване \dotfill 127
+\item Съставна функция \dotfill 129
+\item Граница на функция \dotfill 130
+\item Теореми за граница на функция \dotfill 132
+\item Основни граници \dotfill 136
+\item Непрекъснатост \dotfill 139
+\item Теореми за непрекъснатост \dotfill 142
+\item Производна на функция \dotfill 144
+\item Връзка между непрекъснатост и диференцируемост \dotfill 150
+\end{enumerate}
+\noindent Функции. Непрекъснатост и диференцируемост -- Тест 1 и Тест 2 \dotfill 152\par
+\noindent Проекти \dotfill 154\par
+\noindent Годишен преговор \dotfill 159
+
+\vspace{0.3cm}
+\noindent Отговори -- Модул I \dotfill 163\par
+\noindent Отговори -- Модул II \dotfill 169
+}
+
+\vspace{0.5cm}
+
+\newpage
+
+% УРОК 1.1
+\phantomsection\label{\seclabel}
+
+\begin{tcolorbox}[
+    blanker,
+    top=10pt, bottom=10pt,
+    borderline architectural={1.5pt}{0pt}{tocgreen}
+]
+{\Large\bfseries\color{tocgreen!90!black} 1.1. Линейна зависимост и независимост на вектори\\ в равнината и в пространството}
+\end{tcolorbox}
+\vspace{-0.7cm}
+
+\subsection*{А. Теория}
+
+\subsubsection*{1) Дефиниция за вектор}
+
+\begin{defbox}[Дефиниция 1]
+Отсечка, при която единият край е избран за начало, а другият -- за край, се нарича \emph{насочена отсечка} или \emph{вектор}. \\ Записваме \qtag{$\vv{AB}$}, като $A$ е началото, а $B$ -- краят на насочената отсечка. \\ Вектор може да се бележи и с малка латинска буква: \qtag{$\vv{AB}=\vec{a}$}.
+Въвеждаме следните понятия:
+\begin{itemize}
+    \vspace{-0.2cm}
+    \item[\textbf{--}] \textbf{Нулев вектор:} Ако началото и краят на вектора съвпадат \qtag{($B=A$)}, той се нарича нулев вектор и се бележи с \qtag{$\vv{AA}=\vec{0}$}.
+    \vspace{-0.2cm}
+    \item[\textbf{--}] \textbf{Дължина на вектор:} Дължината на отсечката $AB$ се нарича дължина (или модул) на вектора $\vv{AB}$ и се бележи с \qtag{$|\vv{AB}|$} или \qtag{$|\vec{a}|$}.
+\end{itemize}
+\end{defbox}
+
+\begin{center}
+\begin{tikzpicture}[>=Latex, thick, scale=1.2]
+    \draw[step=0.5cm, gray!15, very thin] (-2.3,-0.7) grid (5.5,2.5);
+    \node[anchor=north west, fill=white, inner sep=2pt, text=black!60, font=\small\rmfamily\bfseries] at (-2.0,1.9) {Пример:};
+    \draw[->, gray!60, thin] (-0.5,0) -- (5,0) node[right, scale=0.8, text=black!70] {$x$};
+    \draw[->, gray!60, thin] (0,-0.3) -- (0,1.7) node[above, scale=0.8, text=black!70] {$y$};
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (4,1.2);
+    \draw[dashed, gray!40, thin] (4,0) -- (B);
+    \draw[dashed, gray!40, thin] (0,1.2) -- (B);
+    \draw[-, defgreen!15, line width=4pt, line cap=round] (A) -- (B);
+    \draw[->, defgreen, line width=1.6pt, line cap=round] (A) -- (B);
+    \filldraw[black] (A) circle (2pt);
+    \filldraw[white] (A) circle (0.8pt);
+    \node[below left=3pt, black!80] at (A) {$A$};
+    \node[above right=2pt, black!80] at (B) {$B$};
+    \path (A) -- (B) node[midway, above left=2pt, color=defgreen!80!black, font=\boldmath] {$\vec{a}$};
+\end{tikzpicture}
+\end{center}
+
+\end{document}
